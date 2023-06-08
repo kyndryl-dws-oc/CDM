@@ -1,21 +1,11 @@
-# Common Data Model Official Packages
 
-| [![NuGet](https://img.shields.io/nuget/v/Microsoft.CommonDataModel.ObjectModel.svg?style=flat-square&label=nuget&colorB=00b200)](https://www.nuget.org/profiles/CommonDataModel/) | [![Maven Central](https://img.shields.io/maven-central/v/com.microsoft.commondatamodel/objectmodel.svg?style=flat-square&label=maven-central&colorB=00b200)](https://search.maven.org/artifact/com.microsoft.commondatamodel/objectmodel) | [![PyPI](https://img.shields.io/pypi/v/commondatamodel-objectmodel.svg?style=flat-square&label=pypi&colorB=00b200)](https://pypi.org/project/commondatamodel-objectmodel/) | [![npm](https://img.shields.io/npm/v/cdm.objectmodel.svg?style=flat-square&label=npm&colorB=00b200)](https://www.npmjs.com/package/cdm.objectmodel) |
-------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+# Welcome to Kyndryl Digital Workplace Services Common Data Model 
 
-# We welcome your feedback
+(Work In Progress)
 
-Do you use the Common Data Model SDK?  If you do, please can you tell us which version(s) you use (C#/.NET, Java, Python, or TypeScript) by taking this [**short survey**](https://forms.office.com/r/hainr3a7rR).
+DWS Common Data Model is based on Common Data Model (<link>) published by Microsoft. 
 
-# Common Data Model (CDM) Schema
 
-The Common Data Model is a declarative specification, and definition of standard entities that represent commonly used concepts and activities across business and productivity applications, and is being extended to observational and analytical data as well. CDM provides well-defined, modular, and extensible business entities such as Account, Business Unit, Case, Contact, Lead, Opportunity, and Product, as well as interactions with vendors, workers, and customers, such as activities and service level agreements. Anyone can build on and extend CDM definitions to capture additional business-specific ideas.
-
-<pre>
-<img src="docs/blank.png"/>  <a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/dynamicsCRM.manifest.cdm.json&simpleChrome=true"> <img src="docs/dyn-static.PNG"/> </a>
-<a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=standards.manifest.cdm.json&simpleChrome=true"> <img src="docs/all-entities-small.PNG"/></a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/insightsApplications.manifest.cdm.json&simpleChrome=true"> <img src="docs/insights-static.PNG"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/financeAndOperations.manifest.cdm.json&simpleChrome=true"> <img src="docs/f-and-o-static.PNG"/> </a>
-<a href="https://microsoft.github.io/CDM/SchemaViz.html?"> <img src="docs/advanced-small.PNG"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/automotiveAccelerator.manifest.cdm.json&simpleChrome=true"> <img src="docs/auto-accel-static.png"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/bankingAccelerator.manifest.cdm.json&simpleChrome=true"> <img src="docs/banking-accel-static.png"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/electronicMedicalRecordsAccelerator.manifest.cdm.json&simpleChrome=true"> <img src="docs/medical-accel-static.png"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/higherEducationAccelerator.manifest.cdm.json&simpleChrome=true"> <img src="docs/higher-ed-accel-static.png"/> </a><a href="https://microsoft.github.io/CDM/SchemaViz.html?initialManifest=manifests/nonProfitAccelerator.manifest.cdm.json&simpleChrome=true"> <img src="docs/non-prof-accel-static.png"/> </a>
-</pre>
 
 # Introduction
 
@@ -27,20 +17,84 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Repository Layout
+
+
+## Why
+
+TODO
+&nbsp;  
+&nbsp;  
+    
+## What 
+**DWS Common Data Model**
+DWS Common Data Model defines a meta data system that defines shape, schema andn traits of data (Entities, Attributes, Relations, and Traits); So that Applications and systems with DWS have common data schema. 
+
+-	Enables data standardization among application and offerings that are built using Microsoft Power Platform
+
+
+
+&nbsp;  
+**Common Data Model (CDM) Schema**
+
+The Common Data Model is a declarative specification, and definition of standard entities that represent commonly used concepts and activities across business and productivity applications, and is being extended to observational and analytical data as well. CDM provides well-defined, modular, and extensible business entities such as Account, Business Unit, Case, Contact, Lead, Opportunity, and Product, as well as interactions with vendors, workers, and customers, such as activities and service level agreements. Anyone can build on and extend CDM definitions to capture additional business-specific ideas.
+
+
+
+
+
+&nbsp;  
+&nbsp;  
+## How
 
 There are two ways to consume the information in this repository:
 
-1. [Entity Reference Index](schemaDocuments#directory-of-cdm-entities)
-2. [Visual Entity Navigator](https://microsoft.github.io/CDM/) for interactively exploring entities, entity extensions/inheritance, attributes, and relationships
+1. <a href= "https://musical-adventure-ey6okom.pages.github.io/SchemaViz.html" target="_new">DWS CDM Schema Explorer</a>
+2. <a href="https://musical-adventure-ey6okom.pages.github.io/" target="_new">DWS CDM Visual Entity Navigator</a> for interactively exploring entities, entity extensions/inheritance, attributes, and relationships
 
-# Versioning
+**Note1: Using Entity Navigator from Private/Internal Repository**
+If hosted on public repos, the Entity Navigator can fetch the manifest directly. When it is hosted on internal/private repository, follow below step to navigate Entities.
 
-Maintaining forward and backward compatibility is a key goal of the CDM. Therefore, the CDM uses only additive versioning, which means any revision of the CDM following a "1.0" release will not:
+- Step 1 :  **clone githib repo.** for ex. below clones testpilot repo from 'kyndryl-dws-oc' Org.
 
-* Introduce new mandatory attributes on previously published entities, or change an optional attribute to be mandatory
-* Rename previously published attributes or entities
-* Remove previously published attributes
+    ```
+    https://github.com/kyndryl-dws-oc/testpilot.git
+    ```
+
+    From the clonned folder, Find the the directories /schemaDocuments/DigitalWorkplaceServices
+
+- Step 2 : **Select Manifest**
+    When you Open the Entity Navigator ( abover #2 link), click "Load from Files"
+    ![Entity NAvigator](./docs/r/entity-nav.png)
+
+    select **DigitalWorkplaceServices**; and select the manifest of your interest( defalut for ex.)
+    ![Select Manifest](./docs/r/entity-popup.png)
+
+- Step 3 : **Explore Entities**
+    ![Explore Entities](./docs/r/entities.png)
+
+
+
+
+
+
+
+
+&nbsp;  
+&nbsp;  
+# Documentation for Integrators / Developers
+TODO.  
+Please refer to Microsoft CDM(Referred Below) for details.
+
+## Reference to Microsoft Common Data Model
+
+Refer [Microsoft Common Data Model](https://github.com/microsoft/CDM) Git hub Repository for more details.
+
+
+
+
+&nbsp;  
+&nbsp;  
+<hr/>
 
 # Legal Notices
 
