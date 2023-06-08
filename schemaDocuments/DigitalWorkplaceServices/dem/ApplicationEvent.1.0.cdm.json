@@ -1,0 +1,37 @@
+
+{
+    "jsonSchemaSemanticVersion" : "1.1.0",
+    "imports" : [
+       {
+         "corpusPath" : "_allimports.cdm.json"
+       }
+     ],
+ 
+     "definitions":[
+        {
+            "entityName" : "ApplicationEvent",
+            "hasAttributes" :[
+                {
+                    "name": "eventId",
+                    "dataType": "string",
+                    "appliedTraits":["means.identity"]
+                },
+                {
+                    "name": "eventType",
+                    "dataType": "string"
+                    
+                    
+                },
+                {
+                    "name": "eventDateTime",
+                    "dataType": "string"
+                }
+        
+            ]
+        }
+ 
+     ]
+ }
+ 
+ 
+ 

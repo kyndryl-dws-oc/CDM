@@ -1,0 +1,33 @@
+
+{
+    "jsonSchemaSemanticVersion" : "1.1.0",
+    "imports" : [
+       {
+         "corpusPath" : "_allimports.cdm.json"
+       }
+     ],
+ 
+     "definitions":[
+        {
+            "entityName" : "Application",
+            "hasAttributes" :[
+                {
+                    "name": "applicationId",
+                    "dataType": "string",
+                    "appliedTraits":["means.identity"]
+                },
+                {
+                    "name": "applicationName",
+                    "dataType": "string"
+                    
+                    
+                }                
+        
+            ]
+        }
+ 
+     ]
+ }
+ 
+ 
+ 
