@@ -1,0 +1,24 @@
+{
+    "jsonSchemaSemanticVersion" : "1.1.0",
+    "imports" : [
+       {
+         "corpusPath" : "_allimports.cdm.json"
+       }
+     ],
+     "manifestName": "Experience Level Agreements",
+
+     "explanation": "Experience Level Agreements Standard Entities",
+     "entities":[
+        {
+            "type": "LocalEntity",
+            "entityName": "HealthScore",
+            "entityPath": "HealthScore.1.0.0.cdm.json/HealthScore"
+        }
+     ],
+     "relationships":[
+        
+     ]
+ }
+ 
+ 
+ 
