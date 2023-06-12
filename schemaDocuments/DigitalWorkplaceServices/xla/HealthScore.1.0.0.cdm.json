@@ -1,0 +1,41 @@
+
+{
+    "jsonSchemaSemanticVersion" : "1.1.0",
+    "imports" : [
+       {
+         "corpusPath" : "_allimports.cdm.json"
+       }
+     ],
+ 
+     "definitions":[
+        {
+            "entityName" : "HealthScore",
+            "hasAttributes" :[
+                {
+                    "name": "metricType",
+                    "dataType": "string"
+                },
+                {
+                    "name": "metricDefinition",
+                    "dataType": "string"
+                },
+                {
+                    "name": "valueType",
+                    "dataType": "string"
+                },
+                {
+                    "name": "valueUnits",
+                    "dataType": "string"
+                },
+                {
+                    "name": "value",
+                    "dataType": "string"
+                }
+            ]
+        }
+ 
+     ]
+ }
+ 
+ 
+ 
