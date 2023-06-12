@@ -12,18 +12,38 @@
             "entityName" : "ApplicationEvent",
             "hasAttributes" :[
                 {
-                    "name": "eventId",
+                    "name": "applicationId",
                     "dataType": "string",
                     "appliedTraits":["means.identity"]
                 },
                 {
-                    "name": "eventType",
+                    "name": "deviceId",
                     "dataType": "string"
                     
                     
                 },
                 {
-                    "name": "eventDateTime",
+                    "name": "activity",
+                    "dataType": "string"
+                },
+                {
+                    "name": "eventCategory",
+                    "dataType": "string"
+                },
+                {
+                    "name": "eventDetail",
+                    "dataType": "string"
+                },
+                {
+                    "name": "eventType",
+                    "dataType": "string"
+                },
+                {
+                    "name": "title",
+                    "dataType": "string"
+                },
+                {
+                    "name": "timeframe",
                     "dataType": "string"
                 }
         
@@ -32,6 +52,4 @@
  
      ]
  }
- 
- 
  
