@@ -38,7 +38,14 @@
             "type": "LocalEntity",
             "entityName": "ReportingAgent",
             "entityPath": "ReportingAgent.1.0.cdm.json/ReportingAgent"
+        },
+        {
+            "type": "LocalEntity",
+            "entityName": "DeviceHealthEvent",
+            "entityPath": "DeviceHealthEvent.1.0.cdm.json/DeviceHealthEvent"
         }
+
+        
      ],
      "relationships":[
         {
