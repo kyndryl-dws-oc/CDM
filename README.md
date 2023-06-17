@@ -1,15 +1,14 @@
 
 # Welcome to Kyndryl Digital Workplace Services Common Data Model 
-
-(Work In Progress)
-
 DWS Common Data Model is based on Common Data Model (<link>) published by Microsoft. 
 
 
 
 # Introduction
 
-The Common Data Model standard defines a common language for business entities covering, over time, the full range of business processes across sales, services, marketing, operations, finance, talent, and commerce and for the Customer, People, and Product entities at the core of a company's business processes. The goal of CDM is to enable data and application interoperability spanning multiple channels, service implementations, and vendors. CDM provides self-describing data (structurally and semantically), enabling applications to easily read and understand the data.
+The Kyndryl DWS Common Data Model defines a common language to describe business entities accross DWS Solutions. The standard is based on Microsoft's Common Data Model and follows the semantics defined in Microsoft Common Data Model (CDM)
+
+The goal of CDM is to enable data and application interoperability spanning multiple channels, service implementations, and vendors. CDM provides self-describing data (structurally and semantically), enabling applications to easily read and understand the data.
 
 The CDM is undergoing a specification effort driven by Microsoft and the documents published are continuously being iterated upon.
 
@@ -48,8 +47,21 @@ The Common Data Model is a declarative specification, and definition of standard
 
 There are two ways to consume the information in this repository:
 
+
 1. <a href= "https://musical-adventure-ey6okom.pages.github.io/SchemaViz.html" target="_new">DWS CDM Schema Explorer</a>
 2. <a href="https://musical-adventure-ey6okom.pages.github.io/" target="_new">DWS CDM Visual Entity Navigator</a> for interactively exploring entities, entity extensions/inheritance, attributes, and relationships
+
+Schema definitins described here are based on the below DWS solution contexts.
+
+| sl#                       | DWS Solution Area         | link |
+| :---                      |     :---                          |          :--- |
+| 1                         | Virtual Agent Platform            | [ Context ](docs/weber/va/va.html)    |
+| 2                         | Service Desk Analytics            | git status    |
+| 3                         | Digital Experience Monitoring     | git status    |
+| 4                         | Catalog of XLAs                   | git status    |
+
+
+
 
 **Note1: Using Entity Navigator from Private/Internal Repository**
 If hosted on public repos, the Entity Navigator can fetch the manifest directly. When it is hosted on internal/private repository, follow below step to navigate Entities.
